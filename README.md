@@ -35,8 +35,8 @@
  	intr-o alta entitate, de tip CompanyMerged. Cu toate acestea am creat o lista pe care am salvat-o 
   	la randul ei in repository-ul aferent CompanyMerged, pentru a le folosi ulterior la nevoie. 
    	In ultima parte a acestui service, pe langa salvarea in repository, am indexat datele in 
-    	Elasticsearch pentru a-mi fi de folos in ultima parte a assignment-ului, convertind informatiile 
-     	intr-un json.
+    	Elasticsearch pentru a-mi fi de folos in ultima parte a assignment-ului, convertind 
+     	informatiile intr-un json.
 
 	La ultima parte a assignment-ului am stabilit criteriile de cautare pentru fiecare parametru dat, 
  	in cadrul Elasticsearch, iar prin folosirea RestHighLevelClient si a functiei de search am cautat 
@@ -51,7 +51,6 @@
  	cadrul proiectului. Pentru acest lucru, am deschis serverul asociat Elasticsearch, am creat o 
   	clasa de config pentru crearea unei instante de RestHighLevelClient de 
 	tip @Bean pentru operatiunile din cadrul Elasticsearch. Pentru initializare, am creat o clasa 
- 	de initializare in care am stabilit 
- 	setarile predefinite pentru cautare si crearea indexului folosit de Elasticsearch. De asemenea, 
-  	am creat un controller aferent pentru 
- 	a apela crearea indexului inainte de a incepe sa verific celelalte endpoint-uri.
+ 	de initializare in care am stabilit setarile predefinite pentru cautare si crearea indexului 
+  	folosit de Elasticsearch. De asemenea, am creat un controller aferent pentru a apela crearea 
+   	indexului inainte de a incepe sa verific celelalte endpoint-uri.
